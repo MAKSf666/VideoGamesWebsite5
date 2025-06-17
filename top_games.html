@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Games</title>
+  <link rel="stylesheet" href="../CSS/atAll.css">
+  <script src="../JS/javascript.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+    }
+    header {
+      background-color: #111;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 36px;
+      text-shadow: 2px 2px 5px black;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    ol {
+      list-style: none;
+      counter-reset: game;
+      padding-left: 0;
+    }
+    ol li {
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 22px;
+      position: relative;
+      transition: transform 0.3s;
+    }
+    ol li::before {
+      counter-increment: game;
+      content: counter(game) ". ";
+      font-weight: bold;
+      position: absolute;
+      left: 15px;
+    }
+    ol li:hover {
+      transform: scale(1.05);
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #111;
+      margin-top: 40px;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+    }
+    .logo {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="../images/logo-removebg-preview.png" alt="Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="genres.html">Genres</a></li>
+        <li><a href="top_games.html">Top Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="author.html">Author</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Top 10 Games</h1>
+    <ol>
+      <li>The Legend of Zelda: Breath of the Wild</li>
+      <li>God of War</li>
+      <li>The Witcher 3: Wild Hunt</li>
+      <li>Minecraft</li>
+      <li>Fortnite</li>
+      <li>Cyberpunk 2077</li>
+      <li>Red Dead Redemption 2</li>
+      <li>League of Legends</li>
+      <li>Counter-Strike: Global Offensive (CS:GO)</li>
+      <li>Grand Theft Auto V (GTA V)</li>
+    </ol>
+  </main>
+
+  <footer>
+    <p>© MMB</p>
+  </footer>
+  <header>
+  <img src="../images/logo.png" alt="Logo" class="logo">
+
+  <!-- кнопка-бургер -->
+  <button class="burger" id="burger">&#9776;</button>
+
+  <!-- навігаційне меню -->
+  <nav id="nav">
+    <ul class="nav-list">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="genres.html">Жанри</a></li>
+      <li><a href="history.html">Історія</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+      <li><a href="author.html">Автор</a></li>
+    </ul>
+  </nav>
+</header>
+</body>
+</html>
