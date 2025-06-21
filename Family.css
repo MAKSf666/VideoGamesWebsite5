@@ -64,7 +64,7 @@
       animation: slide 15s linear infinite;
       overflow: hidden;
       white-space: nowrap;
-      margin-top: 100px;
+      margin-top: 150px;
       position: relative;
       z-index: 1;
     }
