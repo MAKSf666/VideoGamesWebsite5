@@ -64,6 +64,9 @@
       animation: slide 15s linear infinite;
       overflow: hidden;
       white-space: nowrap;
+      margin-top: 80px;
+      position: relative;
+      z-index: 1;
     }
     @keyframes slide {
       0% {transform: translateX(100%);}
