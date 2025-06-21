@@ -236,6 +236,30 @@ nav ul {
     align-items: center;
     gap: 10px;
   }
+  ol {
+      list-style: none;
+      counter-reset: game;
+      padding-left: 0;
+    }
+    ol li {
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 22px;
+      position: relative;
+      transition: transform 0.3s;
+    }
+    ol li::before {
+      counter-increment: game;
+      content: counter(game) ". ";
+      font-weight: bold;
+      position: absolute;
+      left: 15px;
+    }
+    ol li:hover {
+      transform: scale(1.05);
+      background-co
 
   body {
     font-size: 16px;
