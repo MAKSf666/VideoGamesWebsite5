@@ -236,28 +236,6 @@ nav ul {
     align-items: center;
     gap: 10px;
   }
- ol {
-  list-style: decimal;
-  list-style-position: outside;
-  padding-left: 20px;
-  font-family: sans-serif;
-  font-size: 18px;
-}
-
-ol li {
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-    ol li::before {
-      counter-increment: game;
-      content: counter(game) ". ";
-      font-weight: bold;
-      position: absolute;
-      left: 15px;
-    }
-    ol li:hover {
-      transform: scale(1.05);
-      background-co
 
   body {
     font-size: 16px;
@@ -331,8 +309,28 @@ nav a {
     font-size: 1.2rem;
   }
 }
-  nav ul li ul {
-  position: absolute;
-  z-index: 1000;
-  background-color: #333;
-}
+      ol {
+      list-style: none;
+      counter-reset: game;
+      padding-left: 0;
+    }
+    ol li {
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 22px;
+      position: relative;
+      transition: transform 0.3s;
+    }
+    ol li::before {
+      counter-increment: game;
+      content: counter(game) ". ";
+      font-weight: bold;
+      position: absolute;
+      left: 15px;
+    }
+    ol li:hover {
+      transform: scale(1.05);
+      background-color: rgba(0, 0, 0, 0.7);
+    }
