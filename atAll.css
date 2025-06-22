@@ -314,6 +314,8 @@ nav a {
       list-style: none;
       counter-reset: game;
       padding-left: 0;
+
+     padding-top: 50;
     }
     ol li {
       background-color: rgba(0, 0, 0, 0.5);
