@@ -333,7 +333,7 @@ body {
       text-shadow: 2px 2px 5px black;
         color: #00ffcc;
         font-size: 2rem;
-        margin-top: 200px;
+        margin-top: 20px;
     }
     main {
       max-width: 800px;
@@ -375,7 +375,7 @@ body {
       list-style: none;
       counter-reset: game;
       padding-left: 0;
-        margin-top: 200px;
+        margin-top: 170px;
     }
     ol li {
       background-color: rgba(0, 0, 0, 0.5);
