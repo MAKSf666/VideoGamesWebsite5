@@ -396,6 +396,7 @@ body {
       font-size: 22px;
       position: relative;
       transition: transform 0.3s;
+      padding-top: 100;
     }
     ol li::before {
       counter-increment: game;
