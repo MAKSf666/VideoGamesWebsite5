@@ -180,10 +180,6 @@ form button:hover {
       color: #fff;
       text-decoration: none;
     }
-    h1 {
-      text-align: center;
-      margin-top: 20px;
-    }
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -331,12 +327,13 @@ body {
     nav ul li a:hover {
       color: #00bcd4;
     }
-    h1 {
+       h1 {
       text-align: center;
       margin: 30px 0;
-      font-size: 36px;
       text-shadow: 2px 2px 5px black;
-      margin-top: 200px;
+        color: #00ffcc;
+        font-size: 2rem;
+        margin-top: 200px;
     }
     main {
       max-width: 800px;
