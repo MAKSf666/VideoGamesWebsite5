@@ -383,7 +383,7 @@ body {
       list-style: none;
       counter-reset: game;
       padding-left: 0;
-        margin-top: 150px;
+        margin-top: 200px;
     }
     ol li {
       background-color: rgba(0, 0, 0, 0.5);
