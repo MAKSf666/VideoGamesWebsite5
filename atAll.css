@@ -17,10 +17,6 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-.logo {
-  height: 50px;
-}
-
 nav ul {
   list-style-type: none;
   display: flex;
@@ -379,10 +375,10 @@ body {
       margin-top: 40px;
       box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
     }
-    .logo {
+   .logo {
       max-width: 120px;
       margin-bottom: 10px;
-    }
+   }
       ol {
       list-style: none;
       counter-reset: game;
