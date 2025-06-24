@@ -3,7 +3,8 @@ body {
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
-      background-size: cover;
+      background:
+      
     }
     header {
       background-color: #111;
@@ -195,7 +196,7 @@ nav a {
 /* адаптация фона под телефон */
 @media (max-width: 768px) {
   body {
-    background: url("113.png") no-repeat center center fixed;
+    background: url("../images/113.png") no-repeat center center fixed;
     background-size: cover;
   }
 }
