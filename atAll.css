@@ -370,29 +370,34 @@ body {
       max-width: 120px;
       margin-bottom: 10px;
    }
-      ol {
-      list-style: none;
-      counter-reset: game;
-      padding-left: 0;
-        margin-top: 140px;
-    }
-    ol li {
-      background-color: rgba(0, 0, 0, 0.5);
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 22px;
-      position: relative;
-      transition: transform 0.3s;
-    }
-    ol li::before {
-      counter-increment: game;
-      content: counter(game) ". ";
-      font-weight: bold;
-      position: absolute;
-      left: 15px;
-    }
-    ol li:hover {
-      transform: scale(1.05);
-      background-color: rgba(0, 0, 0, 0.7);
-    }
+    ol {
+  list-style: none;
+  counter-reset: game;
+  padding-left: 0;
+}
+
+ol li {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
+  padding: 15px 15px 15px 45px; /* відступ зліва для цифри */
+  border-radius: 10px;
+  font-size: 22px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+ol li::before {
+  counter-increment: game;
+  content: counter(game) ". ";
+  font-weight: bold;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00ffff;
+}
+
+ol li:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.7);
+}
