@@ -1,9 +1,9 @@
- body {
+body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
-      background: url('animation.gif') no-repeat center center fixed;
+      background: url('../images/113.png') no-repeat center center fixed;
       background-size: cover;
     }
     header {
@@ -192,4 +192,11 @@ nav a {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+/* адаптация фона под телефон */
+@media (max-width: 768px) {
+  body {
+    background: url("../images/113.png") no-repeat center center fixed;
+    background-size: cover;
+  }
 }
